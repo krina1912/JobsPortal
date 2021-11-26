@@ -25,41 +25,42 @@
       <div class="single">
            
             <div class="col-md-6">
-            <h1>Employer Register</h1>
+            <h3>Employer Registration</h3>
 
                  <form action="register.php" method="post">
 
-                     <div class="form-group">
-                     <input type="text" placeholder="enter a name" name="name" class="form-control"> 
+                     <div class="form-group my-2">
+                     <input type="text" placeholder="Enter your name" name="name" class="form-control"> 
                      </div>
-                     <div class="form-group">
-                    <input type="text" placeholder="enter a email" name="email" class="form-control">
+                     <div class="form-group my-2">
+                    <input type="text" placeholder="Enter your email" name="email" class="form-control">
                     </div>
-                    <div class="form-group">
-                    <input type="text" placeholder="enter a password" name="password" class="form-control">
+                    <div class="form-group my-2">
+                    <input type="password" placeholder="Enter password" name="password" class="form-control">
                     </div>
-                    <input type="submit"  name="empregister" value="Register Employer" class="btn btn-primary">
+                    <input type="submit"  name="empregister" value="Register Employer" class="btn btn-success">
 
                  </form>
               
 
             </div>
+            <br><br>
 
             <div class="col-md-6">
-            <h1>User Register</h1>
+            <h3>User Registration</h3> 
                  <form action="register.php" method="post">
 
-                     <div class="form-group">
-                     <input type="text" placeholder="enter a name" name="name" class="form-control"> 
+                     <div class="form-group my-2">
+                     <input type="text" placeholder="Enter your Name" name="name" class="form-control"> 
                      </div>
-                     <div class="form-group">
-                    <input type="text" placeholder="enter a email" name="email" class="form-control ">
+                     <div class="form-group my-2">
+                    <input type="text" placeholder="Enter your email" name="email" class="form-control ">
                     </div>
-                    <div class="form-group">
-                    <input type="text" placeholder="enter a password" name="password" class="form-control">
+                    <div class="form-group my-2">
+                    <input type="password" placeholder="Enter password" name="password" class="form-control">
                     </div>
                     
-                    <input type="submit"  name="userregister" value="Register User" class="btn btn-primary">
+                    <input type="submit"  name="userregister" value="Register User" class="btn btn-success">
 
                  </form>
               

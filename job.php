@@ -22,13 +22,13 @@
 	   
 
        <div class="col-md-12" height="400px;" > 
-              
-                <h1><?= $data['title'] ?></h1>
+               <div class="container my-3 border border-success rounded">
+                <h2><?= $data['title'] ?></h2>
                 <h5><?= $data['categories'] ?></h5>
-                <p>Desc :   <?= $data['description'] ?></p>
-                <h3>Salary :   <?= $data['salary'] ?></h3>
-                <h3>Timing :   <?= $data['timing'] ?></h3>
-                <h3>Location :   <?= $data['location'] ?></h3>
+                <h6>Desc :   <?= $data['description'] ?></h6>
+                <h4>Salary :   <?= $data['salary'] ?></h4>
+                <h4>Timing :   <?= $data['timing'] ?></h4>
+                <h4>Location :   <?= $data['location'] ?></h4></div>
 
                  <?php
 
@@ -36,12 +36,12 @@
 
 					if($type == 2){
 
-						echo "<a href='apply.php?jobid=".$data["jobid"]."' class='btn btn-primary'>Apply Now</a>";
+						echo "<a href='apply.php?jobid=".$data["jobid"]."' class='btn btn-success'>Apply Now</a>";
                 
 						
 					}else{
-						echo '<a href="login.php" class="btn btn-primary"> Login </a> ';
-						echo '<a href="register.php" class="btn btn-primary"> Register </a>';
+						// echo '<a href="login.php" class="btn btn-outline-success"> Login </a> ';
+						// echo '<a href="register.php" class="btn btn-success"> Register </a>';
 					}
 
 				 ?>

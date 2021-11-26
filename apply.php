@@ -35,19 +35,20 @@
     <div class="container">
 
 
-      <div class="single">
-      <h1>Apply Jobs</h1>
-            <div class="col-md-6">
+      <div class="single my-2">
+      <h3>Apply for Job </h3>
+      <h5>Upload CV</h5>
+            <div class="col-md-6 ">
                  <form action="apply.php" method="post" enctype="multipart/form-data">
 
                    <input type="hidden" value="<?=$jobid?>" name="jobid" >
                    <input type="hidden" value="<?=$userid?>" name="userid" >
      
-                    <div class="form-group">
+                    <div class="form-group my-2">
                     <input type="file"  name="file" class="form-control"> 
                     </div>
                     
-                    <input type="submit"  name="applyjob" value="Post Job" class="btn btn-primary">
+                    <input type="submit"  name="applyjob" value="Apply" class="btn btn-success">
 
                  </form>
               

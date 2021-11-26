@@ -20,22 +20,22 @@
 
     ?>
 
-    <div class="container">
+    <div class="container my-3">
 
     
       <div class="single">
-      <h1>Employer / User Login</h1>
+      <h3>Employer / User Login</h3> <br>
 
             <div class="col-md-6">
 
                  <form action="login.php" method="post">
-                    <div class="form-group">
-                    <input type="text" placeholder="enter a email" name="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                    <input type="text" placeholder="enter a password" name="password" class="form-control">
-                    </div>
-                    <input type="submit"  name="login" value="Login" class="btn btn-primary">
+                    <div class="form-group my-2">
+                    <input type="text" placeholder="Enter your Email" name="email" class="form-control">
+                    </div> 
+                    <div class="form-group my-2">
+                    <input type="password" placeholder="Enter password" name="password" class="form-control">
+                    </div> 
+                    <input type="submit"  name="login" value="Login" class="btn btn-success">
 
                  </form>
               

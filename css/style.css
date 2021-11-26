@@ -20,6 +20,10 @@ body a{
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 }
+a{
+    text-decoration: none !important;
+    color: #000;
+}
 .navbar-default {
     background-color: blue !important;
     border-color: blue;

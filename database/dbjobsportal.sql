@@ -117,10 +117,18 @@ CREATE TABLE `jobs` (
 -- Dumping data for table `jobs`
 --
 
-INSERT INTO `jobs` (`jobid`, `title`, `catid`, `description`, `salary`, `timing`, `location`, `empid`) VALUES
-(1, 'Front end Designer', 1, 'front designing, ui/ux etc', '20000', '11 to 1', 'Karachi, Pakistan', 2),
-(2, 'Android developer', 3, 'java, xml, ui/ux, kotlin would be plus ', '25000', '3 to 5 ', 'Karachi, Pakistan', 2),
-(3, 'Asp.net developer', 2, 'asp.net mvc, rest api, angular would be plus', '35000', '9 to 5 ', 'Karachi, Pakistan', 2);
+INSERT INTO `jobs` (`jobid`, `title`, `catid`, `description`, `salary`,
+`timing`, `location`, `empid`) VALUES
+(1, 'FrontEnd Designer', 1, 'React Js,HTML,CSS,JS', '20000', '11 to 1',
+'Delhi,India', 2)
+INSERT INTO `jobs` (`jobid`, `title`, `catid`, `description`, `salary`,
+`timing`, `location`, `empid`) VALUES
+(2, 'Android developer', 3, 'Java,Kotlin', '25000', '3 to 5 ',
+'Mumbai,India', 2)
+INSERT INTO `jobs` (`jobid`, `title`, `catid`, `description`, `salary`,
+`timing`, `location`, `empid`) VALUES
+(3, 'Software Tester', 2, 'Software Engineering', '35000', '9 to 5 ',
+'Hyderabad,India', 2);
 
 -- --------------------------------------------------------
 
@@ -131,11 +139,22 @@ INSERT INTO `jobs` (`jobid`, `title`, `catid`, `description`, `salary`, `timing`
 CREATE TABLE `profile` (
   `profileid` int(11) NOT NULL,
   `userid` int(11) NOT NULL,
-  `qulification` varchar(50) NOT NULL,
+  `qualification` varchar(50) NOT NULL,
   `exp` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
+--
+-- Dumping data for table `profile`
+--
+
+INSERT INTO `profile`(`profileid`, `userid`, `qualification`, `exp`)
+VALUES ('1','1','Btech','3 months');
+INSERT INTO `profile`(`profileid`, `userid`, `qualification`, `exp`)
+VALUES ('2','3','Mtech','1 yr');
+INSERT INTO `profile`(`profileid`, `userid`, `qualification`, `exp`)
+VALUES ('3','2','PhD','6 yrs');
+
+-----------------------------------------------------------
 
 --
 -- Table structure for table `user`
@@ -154,12 +173,13 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`userid`, `name`, `email`, `password`, `type`) VALUES
-(2, 'usman', 'usman@gmail.com', '123', 2),
-(4, 'zeeshan', 'zeeshan@gmail.com', '123', 2),
-(5, 'arzoo', 'arzoo@gmail.com', '000', 2),
-(6, 'akbar', 'akbar@gmail.com', '123', 2),
-(7, 'demo', 'demo', '', 2),
-(8, 'demo', 'demo@gmail.com', '123', 2);
+(2, 'Yash', 'yash@gmail.com', '1234', 2),
+INSERT INTO `user` (`userid`, `name`, `email`, `password`, `type`) VALUES
+(9, 'Krina', 'krinapanchal2002@gmail.com', '1234', 2),
+INSERT INTO `user` (`userid`, `name`, `email`, `password`, `type`) VALUES
+(10, 'Arsal', 'arsal@gmail.com', '1234', 2),
+INSERT INTO `user` (`userid`, `name`, `email`, `password`, `type`) VALUES
+(11, 'harry potter', 'harrypotter@gmail.com', '1234', 2);
 
 --
 -- Indexes for dumped tables
